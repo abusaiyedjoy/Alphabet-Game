@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind and Daisy UI -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Alphabet Game</title>
+  </head>
+  <body>
+    <main
+      class="bg-[url('/images/background.png')] max-h-screen w-full bg-no-repeat bg-center"
+    >
+      <div class="w-full min-h-screen gap-8 text-white flex flex-col justify-center items-center">
+        <h1 class="text-7xl font-bold">ALPHABET CLASH</h1>
+        <h5 class="text-2xl">
+          Unleash Your Keyboard Kung Fu : Press “Enter” to Play
+        </h5>
+        <button class="btn btn-primary text-white font-bold">Play Now</button>
+      </div>
+      <div
+        class="hidden w-full min-h-screen flex flex-col items-center gap-10 pt-16"
+      >
+        <div
+          class="bg-white flex flex-col justify-center items-center h-[300px] w-[60%] relative border-8 rounded-xl border-gray-700"
+        >
+          <div
+            class="p-4 pt-0 bg-gray-700 absolute top-0 rounded-b-2xl text-white text-2xl"
+          >
+            <h3>Don't watch keyboard while playing...</h3>
+          </div>
+        </div>
+        <div class="t-20 font-semibold">
+          <div class="flex justify-center gap-3 text-black my-1 w-full">
+            <kbd class="kbd cursor-pointer bg-white">w</kbd>
+            <kbd class="kbd cursor-pointer bg-white">q</kbd>
+            <kbd class="kbd cursor-pointer bg-white">e</kbd>
+            <kbd class="kbd cursor-pointer bg-white">r</kbd>
+            <kbd class="kbd cursor-pointer bg-white">t</kbd>
+            <kbd class="kbd cursor-pointer bg-white">y</kbd>
+            <kbd class="kbd cursor-pointer bg-white">u</kbd>
+            <kbd class="kbd cursor-pointer bg-white">i</kbd>
+            <kbd class="kbd cursor-pointer bg-white">o</kbd>
+            <kbd class="kbd cursor-pointer bg-white">p</kbd>
+          </div>
+          <div class="flex justify-center gap-3 text-black my-1 w-full">
+            <kbd class="kbd cursor-pointer bg-white">a</kbd>
+            <kbd class="kbd cursor-pointer bg-white">s</kbd>
+            <kbd class="kbd cursor-pointer bg-white">d</kbd>
+            <kbd class="kbd cursor-pointer bg-white">f</kbd>
+            <kbd class="kbd cursor-pointer bg-white">g</kbd>
+            <kbd class="kbd cursor-pointer bg-white">h</kbd>
+            <kbd class="kbd cursor-pointer bg-white">j</kbd>
+            <kbd class="kbd cursor-pointer bg-white">k</kbd>
+            <kbd class="kbd cursor-pointer bg-white">l</kbd>
+          </div>
+          <div class="flex justify-center gap-3 text-black my-1 w-full">
+            <kbd class="kbd cursor-pointer bg-white">z</kbd>
+            <kbd class="kbd cursor-pointer bg-white">x</kbd>
+            <kbd class="kbd cursor-pointer bg-white">c</kbd>
+            <kbd class="kbd cursor-pointer bg-white">v</kbd>
+            <kbd class="kbd cursor-pointer bg-white">b</kbd>
+            <kbd class="kbd cursor-pointer bg-white">n</kbd>
+            <kbd class="kbd cursor-pointer bg-white">m</kbd>
+            <kbd class="kbd cursor-pointer bg-white">/</kbd>
+          </div>
+        </div>
+        <div class="flex justify-around w-full top-80">
+          <button class="btn text-white font-bold bg-fuchsia-500">
+            Life
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+            1
+          </button>
+          <button class="btn text-white font-bold bg-fuchsia-500">
+            Score
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              />
+            </svg>
+            1
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="hidden flex justify-center items-center flex-col w-full min-h-screen text-white"
+      >
+        <div class="bg-purple-700 p-8 rounded-xl  text-center">
+          <h1 class="text-5xl mb-5 font-bold">Score : 14</h1>
+          <button class="btn mb-5 btn-primary text-white font-bold">Play Now</button>
+          <h5 class="text-2xl font-bold">Practice will make you Pro</h5>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
